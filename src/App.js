@@ -21,6 +21,11 @@ const App = () => {
                         <Route path=':userid' element={<Single/>}/>
                         <Route path='new' element={<New/>}/>
                     </Route>
+                    <Route path='products'>
+                        <Route index element={<List />}/>
+                        <Route path=':poductid' element={<Single/>}/>
+                        <Route path='new' element={<New/>}/>
+                    </Route>
                 </Route>
             </Routes>
         </BrowserRouter>
