@@ -1,70 +1,68 @@
-.navbar{
-    height: 50px;
-    border-bottom: 0.5px solid rgb(231, 228, 228);
+.navbar {
+  height: 50px;
+  border-bottom: 0.5px solid rgb(231, 228, 228);
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+
+  .wrapper {
+    width: 100%;
     display: flex;
     align-items: center;
-    font-size: 14px;
+    padding: 20px;
+    justify-content: space-between;
 
-    .wrapper{
-        width: 100%;
+    .search {
+      display: flex;
+      align-items: center;
+      border: 0.5px solid lightgray;
+      padding: 3px;
+
+      input {
+        border: none;
+        outline: none;
+        background: transparent;
+
+        &::placeholder {
+          font-size: 12px;
+        }
+      }
+    }
+
+    .items {
+      display: flex;
+      align-items: center;
+
+      .item {
         display: flex;
         align-items: center;
-        padding: 20px;
-        justify-content: space-between;
+        margin: 10px;
+        position: relative;
 
-        .search{
-            display: flex;
-            align-items: center;
-            border: 0.5px solid lightgray;
-            padding: 3px;
-
-            input{
-                border: none;
-                outline: none;
-                background: transparent;
-
-                &::placeholder{
-                    font-size: 12px;
-                }
-            }
+        .icon {
+          font-size: 20px;
         }
 
-        .items{
-            display: flex;
-            align-items: center;
-
-            .item{
-                display: flex;
-                align-items: center;
-                margin: 10px;
-                position: relative;
-
-                .icon{
-                    font-size: 20px;
-                }
-
-                .avatar{
-                    height: 30px;
-                    width: 30px;
-                    border-radius: 50%;
-                    border: 0.5px dashed black;
-                }
-                .counter{
-                    width: 14px;
-                    height: 14px;
-                    background-color: red;
-                    border-radius: 50%;
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    color: white;
-                    font-size: 10px;
-                    font-weight: bold;
-                    position: absolute;
-                    top: -5px;
-                    right: -5px;
-                }
-            }
+        .avatar {
+          border: 0.5px solid black;
+          font-size: 15px;
         }
+        .counter {
+          width: 14px;
+          height: 14px;
+          background-color: red;
+          border-radius: 50%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          color: white;
+          font-size: 10px;
+          font-weight: bold;
+          position: absolute;
+          top: -5px;
+          right: -5px;
+        }
+      }
     }
+  }
 }
