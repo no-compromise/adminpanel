@@ -1,3 +1,3 @@
-1:24:00
+1:53:00
 
 LamaDEV admin panel tutorial...
