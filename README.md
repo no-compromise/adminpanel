@@ -1,5 +1,5 @@
 1:54:00
 
-LamaDEV admin panel tutorial...
+LamaDEV admin panel tutorial....
 
 -
