@@ -42,6 +42,9 @@
       color: darkblue;
       border: 1px dotted rgba(0, 0, 139, 0.527);
       cursor: pointer;
+      &:hover {
+        background-color: rgba(0, 0, 139, 0.527);
+      }
     }
     .deleteButton {
       padding: 2px 5px;
@@ -49,6 +52,9 @@
       color: red;
       border: 1px dotted rgba(139, 0, 0, 0.493);
       cursor: pointer;
+      &:hover {
+        background-color: #f8000046;
+      }
     }
   }
 }

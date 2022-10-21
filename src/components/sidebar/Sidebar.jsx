@@ -7,24 +7,31 @@ import ListAltIcon from "@mui/icons-material/ListAlt";
 import AccountBoxIcon from "@mui/icons-material/AccountBox";
 import LogoutIcon from "@mui/icons-material/Logout";
 import BugReportOutlinedIcon from "@mui/icons-material/BugReportOutlined";
+import { Link } from "react-router-dom";
 
 const Sidebar = () => {
   return (
     <div className="sidebar">
       <div className="top">
-        <span className="logo">MyAdmin</span>
+        <Link to="/" style={{ textDecoration: "none" }}>
+          <span className="logo">MyAdmin</span>
+        </Link>
       </div>
       <hr />
       <div className="center">
         <ul>
           <p className="title">MAIN</p>
           <li>
-            <DashboardIcon className="icon" />
-            <span>Dashboard</span>
+            <Link to="/" style={{ textDecoration: "none" }}>
+              <DashboardIcon className="icon" />
+              <span>Dashboard</span>
+            </Link>
           </li>
           <li>
-            <PersonIcon className="icon" />
-            <span>Users</span>
+            <Link to="/users" style={{ textDecoration: "none" }}>
+              <PersonIcon className="icon" />
+              <span>Users</span>
+            </Link>
           </li>
           <li>
             <ShoppingCartIcon className="icon" />

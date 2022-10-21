@@ -1,6 +1,5 @@
 import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-
 import Home from "./pages/home/Home";
 import Login from "./pages/login/Login";
 import List from "./pages/list/List";
@@ -8,9 +7,11 @@ import Single from "./pages/single/Single";
 import New from "./pages/new/New";
 import Test from "./pages/test/Test";
 
+import "./styles/dark.scss";
+
 const App = () => {
   return (
-    <div className="App">
+    <div className="app dark">
       <BrowserRouter>
         <Routes>
           <Route path="/">
