@@ -34,8 +34,10 @@ const Sidebar = () => {
             </Link>
           </li>
           <li>
-            <ShoppingCartIcon className="icon" />
-            <span>Products</span>
+            <Link to="/products" style={{ textDecoration: "none" }}>
+              <ShoppingCartIcon className="icon" />
+              <span>Products</span>
+            </Link>
           </li>
           <li>
             <ListAltIcon className="icon" />

@@ -6,12 +6,13 @@ import List from "./pages/list/List";
 import Single from "./pages/single/Single";
 import New from "./pages/new/New";
 import Test from "./pages/test/Test";
+import Products from "./pages/products/Products";
 
 import "./styles/dark.scss";
 
 const App = () => {
   return (
-    <div className="app dark">
+    <div className="apps">
       <BrowserRouter>
         <Routes>
           <Route path="/">
@@ -23,9 +24,7 @@ const App = () => {
               <Route path="new" element={<New />} />
             </Route>
             <Route path="products">
-              <Route index element={<List />} />
-              <Route path=":poductid" element={<Single />} />
-              <Route path="new" element={<New />} />
+              <Route index element={<Products />} />
             </Route>
             <Route path="test" element={<Test />} />
           </Route>
