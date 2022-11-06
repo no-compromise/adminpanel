@@ -1,0 +1,27 @@
+.list {
+  display: flex;
+  width: 100%;
+
+  .listContainer {
+    flex: 1;
+
+    .container {
+      -webkit-box-shadow: 2px 10px 4px 1px rgb(46, 44, 44, 0.3);
+      box-shadow: 2px 10px 4px 1px rgb(46, 44, 44, 0.3);
+      padding: 20px;
+      margin: 20px;
+      .header {
+        font-weight: 500;
+        color: gray;
+        margin-bottom: 15px;
+      }
+      .regform {
+        margin: 10px;
+        .form {
+          display: flex;
+          flex-direction: column;
+        }
+      }
+    }
+  }
+}
