@@ -36,6 +36,7 @@ const Posttable = () => {
         setFetching(true);
         const response = await api.get("/posts");
         setPosts(response.data);
+        console.log(response.data);
       } catch (err) {
         if (err.response) {
           setAlert(true);
